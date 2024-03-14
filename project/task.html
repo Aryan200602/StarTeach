@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #task-list {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        #task-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #task-list li {
+            margin: 10px 0;
+        }
+
+        #add-task-form {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #add-task-form label {
+            color: #3498db;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        #add-task-form input {
+            width: 70%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        #add-task-form button {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #add-task-form button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Task List</h1>
+</header>
+
+<div id="task-list">
+    <ul>
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <!-- Add more tasks as needed -->
+    </ul>
+</div>
+
+<div id="add-task-form">
+    <h2>Add New Task</h2>
+    <form>
+        <label for="newTask">Task:</label>
+        <input type="text" id="newTask" name="newTask" placeholder="Enter your new task...">
+        <button type="button">Add Task</button>
+    </form>
+</div>
+
+</body>
+</html>
